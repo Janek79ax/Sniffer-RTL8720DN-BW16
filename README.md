@@ -56,4 +56,5 @@ After you copy the libraries, do NOT let ArduinoIDE to upgrade them until you ha
 | 3V3              | 3V3  |
 
 # Pictures
-TODO add photos
+
+![Sniffer](sniffer.jpg)
