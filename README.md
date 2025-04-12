@@ -29,13 +29,16 @@ You can add more BSSIDs and change them.
 ## Channels
 Below, in line 37 is a way simpler array with channels that should be observed. 
 
+uint8_t channels[2] = { 11, 44 };
+
+Just enter channel numbers here. Sniffer will jump between these channels periodically.
 
 # How to build
 In order to compile this code, you need to replace 3 libraries: BusIO, GFX and SSD1306.
-## How to get them:
+## How to get the libraries:
 Check out these 3 directories:
 https://github.com/dkyazzentwatwa/cypher-5G-deauther/tree/main/RTL8720DN_SSD1306_FIX 
-## Where to put them
+## Where to put the libraries
 Copy them into your home_directory/Documents/Arduino/libraries
 
 ## Warning 
@@ -53,3 +56,4 @@ After you copy the libraries, do NOT let ArduinoIDE to upgrade them until you ha
 | 3V3              | 3V3  |
 
 # Pictures
+TODO add photos
