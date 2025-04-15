@@ -16,7 +16,6 @@ Wel, first you need to learn what is the BSSID of the Access Point you want to o
 
 Please note order of bssids and channels does not need to be in sync, but of course these networks need to exist on any of the listed channels. 
 
-
 Next, you need to add leading 0x before each of the 6 comma-separated elements and put them in the array.
 
 See lines 30-32. There is a 2-dimensional array called 'target'. It contains examples of BSSIDs.
@@ -24,7 +23,7 @@ See lines 30-32. There is a 2-dimensional array called 'target'. It contains exa
   { 0xAA, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF },  
   { 0xA1, 0xB1, 0xC1, 0xD1, 0xE1, 0xF1 }
 
-You can add more BSSIDs and change them. 
+You can add more BSSIDs and change them. Of course do not forget about leading '0x'.
 
 ## Channels
 Below, in line 37 is a way simpler array with channels that should be observed. 
@@ -42,7 +41,7 @@ https://github.com/dkyazzentwatwa/cypher-5G-deauther/tree/main/RTL8720DN_SSD1306
 Copy them into your home_directory/Documents/Arduino/libraries
 
 ## Warning 
-After you copy the libraries, do NOT let ArduinoIDE to upgrade them until you have the working code on your board.
+After you copy the libraries, do NOT let ArduinoIDE upgrade it until you have the working code on your board. Just click 'upgrade later' option.
 
 # How to wire
 | TFT Screen        | RTL8720DN (BW16) |
@@ -53,7 +52,7 @@ After you copy the libraries, do NOT let ArduinoIDE to upgrade them until you ha
 | CS (Chip Select) | PA15 |
 | SCK (Serial clock)| PA14 |
 | GND              | GND  |
-| 3V3              | 3V3  |
+| VCC              | 3V3  |
 
 # Pictures
 
